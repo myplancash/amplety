@@ -10,7 +10,7 @@ export const Headline = styled.nav`
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+  background-color: #FFFDFA;
   margin-bottom: 1rem;
   position: sticky;
   top: 0;
@@ -37,32 +37,20 @@ export const Headline = styled.nav`
   span {
     margin-right: 0.6rem;
   }
-/* 
-  @media (max-width: 700px) {
-    display: block;
-    text-align: center;
-    ul {
-      text-align: center;
-      justify-content: center;
-    }
-  } */
+ 
+ @media all and (max-width: 600px) {
 
-  .grid-2,
-  .grid-3,
-  .grid-4 {
-    grid-template-columns: 1fr;
-  }
+  flex-flow: column wrap;
+  padding: 0;
 
-  /* Text Styles */
-  .x-large {
-    font-size: 3rem;
+  a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
   }
-
-  .large {
-    font-size: 2rem;
+  li:last-of-type a {
+    border-bottom: none;
   }
-
-  .lead {
-    font-size: 1rem;
-  }
+}
 `

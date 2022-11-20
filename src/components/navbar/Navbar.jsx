@@ -7,7 +7,9 @@ const Navbar = () => {
   return (
     <Headline>
       <h1>
-        <FaHome /> Home
+        <Link to='/'>
+          <FaHome />Home
+        </Link>
       </h1>
       <ul>
         <li>
@@ -15,6 +17,9 @@ const Navbar = () => {
         </li>
         <li>
           <Link to='/blog'>Blog</Link>
+        </li>
+         <li>
+          <Link to='/posts'>Posts</Link>
         </li>
       </ul>
     </Headline>
